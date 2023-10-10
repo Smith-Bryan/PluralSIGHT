@@ -25,3 +25,26 @@ Tree map alpha numerically lexiocligraphical
 
 Sets don’t allow repeated values
 .RetainAll() gets intersection
+
+
+TO LOOP THROUGH A MAP YOU MUST:
+ for (Map.Entry<String,String> entry : gfg.entrySet())  
+            System.out.println("Key = " + entry.getKey() + 
+                             ", Value = " + entry.getValue()); 
+    } 
+} 
+
+
+TO LOOP THROUGH A COLLECTION:
+  // Get the iterator
+    Iterator<String> it = cars.iterator();
+
+    // Print the first item
+    System.out.println(it.next());
+  }
+}
+
+To loop through a collection, use the hasNext() and next() methods of the Iterator:
+while(it.hasNext()) {
+  System.out.println(it.next());
+}
